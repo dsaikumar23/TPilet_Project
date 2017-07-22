@@ -28,11 +28,11 @@ public class SearchFlights {
  		
  		if(RuntimeTitle.equalsIgnoreCase(PageTitle)){
  			
- 			System.out.println("Success, We are in right page");
+ 			System.out.println("Right Page");
  			
  		} else {
  			
- 			System.out.println("Failed, We are NOT in right page");
+ 			System.out.println("Wrong page");
  		}
  		
  		TPilot.findElement(By.xpath(".//*[@id='trip-search']/form/div[1]")).click();

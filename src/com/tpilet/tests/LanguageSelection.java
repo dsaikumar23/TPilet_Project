@@ -27,17 +27,17 @@ public class LanguageSelection {
  	  
  		LanguageList.selectByVisibleText("est");
  	   
- 		String PageTitle = "Piletid sinu teekonnale";
+ 		String PTitle = "Piletid sinu teekonnale";
  		
- 		String RuntimeTitle = TPilot.getTitle();
+ 		String ActualTitle = TPilot.getTitle();
  		
- 		if(RuntimeTitle.equalsIgnoreCase(PageTitle)){
+ 		if(ActualTitle.equalsIgnoreCase(PTitle)){
  			
- 			System.out.println("Success, We are in right page");
+ 			System.out.println("Correct Page");
  			
  		} else {
  			
- 			System.out.println("Failed, We are NOT in right page");
+ 			System.out.println("Wrong Page");
  		}
  		
   		TPilot.close();

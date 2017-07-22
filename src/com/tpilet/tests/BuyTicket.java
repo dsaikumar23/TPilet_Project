@@ -11,6 +11,72 @@ import org.openqa.selenium.support.ui.Select;
 
 public class BuyTicket {
 
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -22,17 +88,17 @@ public class BuyTicket {
  		
  		TPilot.get("https://www.tpilet.ee/en");
  		
- 		String PageTitle = "Tickets for your journeys";
+ 		String PTitle = "Tickets for your journeys";
  		
- 		String RuntimeTitle = TPilot.getTitle();
+ 		String ActualTitle = TPilot.getTitle();
  		
- 		if(RuntimeTitle.equalsIgnoreCase(PageTitle)){
+ 		if(ActualTitle.equalsIgnoreCase(PTitle)){
  			
- 			System.out.println("Success, We are in right page");
+ 			System.out.println("correct page");
  			
  		} else {
  			
- 			System.out.println("Failed, We are NOT in right page");
+ 			System.out.println("Wrong Page");
  		}
  		
  		TPilot.findElement(By.xpath(".//*[@id='trip-search']/form/div[1]")).click();
@@ -54,21 +120,11 @@ public class BuyTicket {
  		
  		TPilot.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
  		
-		  WebElement dateWidget = TPilot.findElement(By.id("ui-datepicker-div")); 
+		  WebElement date = TPilot.findElement(By.id("ui-datepicker-div")); 
 		  
-		  List<WebElement> rows=dateWidget.findElements(By.tagName("tr"));  
+		  //List<WebElement> Daterows=date.findElements(By.tagName(""));  
 		  
-		  List<WebElement> columns=dateWidget.findElements(By.tagName("td"));  
 		  
-		  String Date = "30";
-		  
-		  for (WebElement cell: columns){  
-	   
-			   if (cell.getText().equals(Date)){  
-				   cell.findElement(By.linkText(Date)).click();  
-				   break;  
-			   }  
-		  }   
 		
 	}
 }
